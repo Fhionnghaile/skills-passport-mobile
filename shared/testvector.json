@@ -1,0 +1,18 @@
+{
+  "algorithm": "Ed25519",
+  "publicKeyBase64": "A6EHv/POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg=",
+  "claims": {
+    "name": "Jane Doe",
+    "credential": "BSc Computer Science",
+    "issuer": "Derry",
+    "year": 2024
+  },
+  "canonicalMessageBase64": "eyJjcmVkZW50aWFsIjoiQlNjIENvbXB1dGVyIFNjaWVuY2UiLCJpc3N1ZXIiOiJEZXJyeSIsIm5hbWUiOiJKYW5lIERvZSIsInllYXIiOjIwMjR9",
+  "signatureBase64": "I6SuCMJIQk47Zl+QdqvwpnaQ+EDfjJbEujI0lfLgbAofueZ3OkqFN1d9wzuMrqTRkwuOZIZRiUlcjFDBg5JNAg==",
+  "tamperedClaims": {
+    "name": "Jane Doe",
+    "credential": "PhD Nonsense",
+    "issuer": "Derry",
+    "year": 2024
+  }
+}
