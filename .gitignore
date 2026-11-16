@@ -1,0 +1,27 @@
+# Build output
+build/
+dist/
+out/
+*.apk
+*.aab
+*.ipa
+
+# Gradle / Android
+.gradle/
+local.properties
+*.iml
+
+# Xcode / iOS
+xcuserdata/
+*.xcuserstate
+DerivedData/
+Pods/
+
+# Node / tooling
+node_modules/
+
+# OS / editor
+.DS_Store
+*.log
+.idea/
+.vscode/
