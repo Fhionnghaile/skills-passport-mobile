@@ -1,5 +1,7 @@
 # Mobile — Skills Passport (iOS) + Companion (Android)
 
+[![CI](https://github.com/Fhionnghaile/skills-passport-mobile/actions/workflows/ci.yml/badge.svg)](https://github.com/Fhionnghaile/skills-passport-mobile/actions/workflows/ci.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Fhionnghaile/skills-passport-mobile/badge)](https://scorecard.dev/viewer/?uri=github.com/Fhionnghaile/skills-passport-mobile)
+
 Native companions to the Derry **Veritas** verifiable-credentials service:
 
 - **iOS (Swift)** — a Skills Passport wallet. Verifies Veritas's **Ed25519** credential

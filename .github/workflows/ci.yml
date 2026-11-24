@@ -1,0 +1,27 @@
+name: CI
+on: { push: { branches: [main] }, pull_request: {}, schedule: [{ cron: "11 6 * * 1" }], workflow_dispatch: {} }
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install cryptography && cd shared && python gen_vector.py
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: "21" }
+      - name: JDK Ed25519 cross-check (the Android verification path) + canonical JSON
+        run: |
+          cd shared
+          V=$(python - <<'EOF'
+          import json, base64
+          d = json.load(open("testvector.json"))
+          c = lambda o: base64.b64encode(json.dumps(o, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()).decode()
+          print(d["publicKeyBase64"], d["canonicalMessageBase64"], d["signatureBase64"], c(d["tamperedClaims"]))
+          EOF
+          )
+          set -- $V
+          java VerifierCheck.java "$1" "$2" "$3" "$4"
+          java CanonicalCheck.java "$2"
