@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="847" height="296" viewBox="0 0 847 296" role="img" aria-label="skills-passport-mobile — real test run, captured 24 Nov 2026">
+<rect width="847" height="296" rx="10" fill="#0f172a"/>
+<rect width="847" height="32" rx="10" fill="#1e293b"/><rect y="22" width="847" height="10" fill="#1e293b"/>
+<circle cx="18" cy="16" r="6" fill="#ef4444"/><circle cx="38" cy="16" r="6" fill="#f59e0b"/><circle cx="58" cy="16" r="6" fill="#22c55e"/>
+<text x="423.5" y="21" text-anchor="middle" font-family="ui-sans-serif,Segoe UI,Arial" font-size="12" fill="#cbd5e1">skills-passport-mobile — real test run, captured 24 Nov 2026</text>
+<g font-family="ui-monospace,Consolas,Menlo,monospace" font-size="13">
+<text x="18" y="50" fill="#7dd3fc" xml:space="preserve">$ pip install -q cryptography 2&gt;&amp;1 | tail -1; cd shared &amp;&amp; python gen_vector.py</text>
+<text x="18" y="68" fill="#e2e8f0" xml:space="preserve">OK: vector generated and self-verified (valid passes, tampered fails)</text>
+<text x="18" y="86" fill="#e2e8f0" xml:space="preserve">pubkey: A6EHv/POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg=</text>
+<text x="18" y="104" fill="#e2e8f0" xml:space="preserve">sig: I6SuCMJIQk47Zl+QdqvwpnaQ+EDfjJbE ...</text>
+<text x="18" y="122" fill="#e2e8f0" xml:space="preserve">[exit 0]</text>
+<text x="18" y="140" fill="#e2e8f0" xml:space="preserve"></text>
+<text x="18" y="158" fill="#7dd3fc" xml:space="preserve">$ cd shared &amp;&amp; java VerifierCheck.java A6EHv/POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg= eyJjcmVkZW50aWFsIjo…</text>
+<text x="18" y="176" fill="#e2e8f0" xml:space="preserve">valid signature verifies:   true</text>
+<text x="18" y="194" fill="#e2e8f0" xml:space="preserve">tampered claim rejected:     true</text>
+<text x="18" y="212" fill="#e2e8f0" xml:space="preserve">JAVA_ED25519_CROSSCHECK: PASS</text>
+<text x="18" y="230" fill="#e2e8f0" xml:space="preserve">canonical bytes match vector: true</text>
+<text x="18" y="248" fill="#e2e8f0" xml:space="preserve">CANONICAL_CHECK: PASS</text>
+<text x="18" y="266" fill="#e2e8f0" xml:space="preserve">[exit 0]</text>
+</g></svg>

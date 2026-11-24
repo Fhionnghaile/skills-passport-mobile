@@ -7,6 +7,6 @@ suites, so both verify the **same** known-good data.
 - `VerifierCheck.java` — re-verifies with the JDK's native Ed25519 (`java.security`), the
   Android path. `java VerifierCheck <pub> <msg> <sig> <tamperedMsg>` → `PASS`.
 - `CanonicalCheck.java` — proves the canonical-JSON encoder is byte-identical to the
-  signer. → `PASS`.
+  signer: `java CanonicalCheck <canonicalMessageBase64>` → `PASS` (the value is in `testvector.json`).
 
 Regenerate: `python3 gen_vector.py`.

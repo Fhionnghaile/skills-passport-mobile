@@ -11,6 +11,9 @@ Native mobile companions to Veritas. The iOS wallet verifies credentials locally
 ## 3. Demo
 Capture to record: a 60-second simulator run (needs a Mac for iOS, or an Android emulator).
 
+![Real test run, captured 24 Nov 2026](docs/test-run.svg)
+*Real output of the shared Ed25519 cross-checks (Python and the JDK path Android uses), captured 24 Nov 2026. The full Xcode and Gradle suites are not shown.*
+
 ## 4. Run it yourself
 **Prerequisites:** Xcode for iOS; Android Studio/Gradle for Android; Java and Python for the shared checks.
 
